@@ -2,7 +2,7 @@
 /*!*****************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/index.less ***!
   \*****************************************************************************************************/
-/*! no static exports found */function(module,exports,__webpack_require__){eval('exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);\n// Module\nexports.push([module.i, "div {\\n  background-color: #aaa;\\n}\\n", ""]);\n\n\n//# sourceURL=webpack:///./src/index.less?./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js')},"./node_modules/css-loader/dist/runtime/api.js":
+/*! no static exports found */function(module,exports,__webpack_require__){eval('exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);\n// Module\nexports.push([module.i, "div {\\n  background-color: #aaa;\\n  transform: rotate(90deg);\\n}\\n", ""]);\n\n\n//# sourceURL=webpack:///./src/index.less?./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js')},"./node_modules/css-loader/dist/runtime/api.js":
 /*!*****************************************************!*\
   !*** ./node_modules/css-loader/dist/runtime/api.js ***!
   \*****************************************************/

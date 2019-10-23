@@ -11,5 +11,6 @@
     "less": "^3.10.3",
     "css-loader": "^3.2.0",
     "less-loader": "^5.0.0",
-    "style-loader": "^1.0.0"
+    "style-loader": "^1.0.0"，
+    "postcss-loader": "^3.0.0",
     ```

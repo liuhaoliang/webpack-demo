@@ -5,7 +5,7 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: "./src/index.js",
+  entry:path.resolve(__dirname, "../src/index.js"),
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "../dist")
@@ -25,7 +25,8 @@ module.exports = {
         test: /\.js$/,
         use: "babel-loader",
         exclude: "/node_modules/"
-      }
+      },
+      {test: /\.(less|css)?$/, loader: ["style-loader", "css-loader", "less-loader"]}
     ]
   },
   plugins: [

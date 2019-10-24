@@ -26,6 +26,7 @@ module.exports = {
         use: "babel-loader",
         exclude: "/node_modules/"
       },
+      { test: /\.ts$/, use: "ts-loader" },
       {
         test: /\.(less|css)?$/,
         loader: ["style-loader", "css-loader", "less-loader", "postcss-loader"]

@@ -1,7 +1,6 @@
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -16,14 +15,11 @@ module.exports = {
     compress: true,
     port: 9000
   },
-  // optimization: {
-  //   minimizer: [new UglifyJsPlugin()]
-  // },
   module: {
     rules: [
       {
         test: /\.js$/,
-        use: "babel-loader",
+        loader: "babel-loader",
         exclude: "/node_modules/"
       },
       { test: /\.ts$/, use: "ts-loader" },
@@ -34,7 +30,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new UglifyJsPlugin(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "../public/index.html")
